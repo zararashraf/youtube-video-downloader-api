@@ -19,13 +19,13 @@ def download_video(url, resolution):
 def get_video_info(url):
     try:
         yt = YouTube(url)
-        desc = yt.description
+        stream = yt.streams.first()
         video_info = {
             "title": yt.title,
             "author": yt.author,
             "length": yt.length,
             "views": yt.views,
-            "description": desc,
+            "description": yt.description,
             "publish_date": yt.publish_date,
         }
         return video_info, None
