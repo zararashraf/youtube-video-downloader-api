@@ -56,7 +56,7 @@ This project is designed to simplify the process of interacting with YouTube con
 ![image](https://github.com/zararashraf/youtube-video-downloader-api/assets/36181292/edad60c8-27fc-4ed0-8243-21ffc4cc16cc)
 
 ### Retrieving Info
-![image](https://github.com/zararashraf/youtube-video-downloader-api/assets/36181292/6ae96dda-727b-4868-8d89-00c1120554f5)
+![image](https://github.com/zararashraf/youtube-video-downloader-api/assets/36181292/e0e3aeb3-fa97-41c7-9d89-971f2cda421e)
 
 
 ## Code Repository
