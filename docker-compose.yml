@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "${PORT:-5000}:${PORT:-5000}"
+    volumes:
+      - ./downloads:/app/downloads
+    env_file:
+      - .env
+    environment:
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-*}
+      - PORT=${PORT:-5000}
+      - DEBUG=${DEBUG:-True}
+
+    restart: always

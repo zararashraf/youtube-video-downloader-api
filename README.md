@@ -20,14 +20,48 @@ This project is designed to simplify the process of interacting with YouTube con
 ## Libraries and Technologies Used
 - Python 3.x
 - Flask for building the API.
-- Pytube for interacting with YouTube content.
+- pytubefix for interacting with YouTube content.
 - re for URL validation.
+- flask-cors for handling CORS.
+- python-dotenv for environment variable management.
+
+## Configuration
+The application uses environment variables for configuration. Create a `.env` file in the root directory based on `.env.example`:
+
+```bash
+# Example on Windows/Linux/macOS:
+# Copy .env.example to .env and adjust as needed
+```
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `ALLOWED_ORIGINS` | Comma-separated list of allowed CORS origins | `*` |
 
 ## Usage
 1. Clone this repository: `git clone https://github.com/zararashraf/youtube-video-downloader-api.git`
-2. Install the required libraries: `pip install flask pytubefix`
-3. Run the Flask application: `python main.py`
-4. Access the API endpoints using HTTP requests (e.g., POST requests in Postman).
+2. Create and activate a virtual environment (optional but recommended):
+   - **Windows:**
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - **macOS/Linux:**
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+3. Install the required libraries: `pip install -r requirements.txt`
+4. Run the Flask application: `python main.py`
+5. Access the API endpoints using HTTP requests (e.g., POST requests in Postman).
+
+### Running with Docker 🐳
+For a quick setup with all dependencies (including FFmpeg) pre-installed:
+
+```bash
+# Build and start the container
+docker-compose up -d
+```
+The API will be available at `http://localhost:5000`.
 
 ## API Endpoints
 

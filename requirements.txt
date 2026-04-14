@@ -1,0 +1,5 @@
+flask
+pytubefix
+flask-cors
+python-dotenv
+ffmpeg-python
