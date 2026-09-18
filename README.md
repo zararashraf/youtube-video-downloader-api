@@ -68,9 +68,11 @@ This project is designed to simplify the process of interacting with YouTube con
 ### Retrieving Info
 ![image](https://github.com/zararashraf/youtube-video-downloader-api/assets/36181292/e0e3aeb3-fa97-41c7-9d89-971f2cda421e)
 
-
 ## Code Repository
 You can access the source code for this project on [GitHub](https://github.com/zararashraf/youtube-video-downloader-api/blob/main/main.py).
+
+## Hosted option
+If you would rather not self-host, [Vid Kraken](https://vidkraken.com) provides a hosted alternative.
 
 ## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the code while providing appropriate attribution.
